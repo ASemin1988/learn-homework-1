@@ -31,6 +31,6 @@ def main():
         print(2)
     elif len(string1) < len(string2):
         print(3)
-test
+
 if __name__ == "__main__":
     main()
