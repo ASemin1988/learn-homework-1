@@ -1,3 +1,4 @@
+
 """
 
 Домашнее задание №1
@@ -21,7 +22,17 @@ def ask_user(answers_dict):
     """
     Замените pass на ваш код
     """
-    pass
-    
+    questions_and_answers = {"Как дела?": "Хорошо!", "Что делаешь?": "Программирую",
+                             "Где ты живешь?": "В Москве", "Какая у вас погода?": "Сегодня солнечно"}
+
+
+    while True:
+        user_say = input ('Введите свой вопрос: ')
+        if user_say in questions_and_answers:
+            print(questions_and_answers[user_say])
+            break
+        else:
+            print('Введите другой вопрос'.format(user_say))
+
 if __name__ == "__main__":
     ask_user(questions_and_answers)
