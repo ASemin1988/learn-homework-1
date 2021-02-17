@@ -32,7 +32,7 @@ def ask_user(answers_dict):
             print(questions_and_answers[user_say])
             break
         else:
-            print('Введите другой вопрос'.format(user_say))
+            print(f'Введите другой вопрос {user_say}')
 
 if __name__ == "__main__":
     ask_user(questions_and_answers)
