@@ -28,7 +28,7 @@ def ask_user(answers_dict):
 
     while True:
         user_say = input('Введите свой вопрос: ')
-        if user_say in questions_and_answers:
+        if questions_and_answers.get(user_say):
             print(questions_and_answers[user_say])
             break
         else:
