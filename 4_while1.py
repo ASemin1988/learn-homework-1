@@ -16,11 +16,12 @@ def hello_user():
     """
     while True:
         user_say = input('Как дела: ')
-        if user_say == 'Хорошо':
-            print('Отлично')
+        word = 'Хорошо'
+        if user_say == word:
+            print('Я тоже думаю что хорошо')
             break
         else:
-            print('Как твои дела {}'.format(user_say))
+            print(f'Как твои дела {user_say}')
 
     
 if __name__ == "__main__":
