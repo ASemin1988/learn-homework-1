@@ -25,7 +25,7 @@ def main():
 
     if len(string1) == len(string2):
         print(1)
-    elif type(string1) and type(string2) != str:
+    elif isinstance(string1, str) or isinstance(string2, str):
         print(0)
     elif len(string1) > len(string2):
         print(2)
