@@ -18,24 +18,23 @@ def discounted(price, discount, max_discount=20):
     """
     Замените pass на ваш код
     """
-
     try:
         price = abs(float(price))
         discount = abs(float(discount))
         max_discount = abs(int(max_discount))
-    except ValueError:
-        max_discount != int and discount != float and price != float
 
 
-    if max_discount > 99:
-        raise ValueError('Слишком большая максимальная скидка')
-    try:
+        if max_discount > 99:
+            raise ValueError('Слишком большая максимальная скидка')
+
         if discount >= max_discount:
             return price
         else:
             return price - (price * discount / 100)
-    except TypeError:
-        price != str and price != int
+    except ValueError as e:
+        print(f'{e}')
+    except TypeError as ex:
+        print(f'{ex}')
 
 if __name__ == "__main__":
     print(discounted(100, 2))
