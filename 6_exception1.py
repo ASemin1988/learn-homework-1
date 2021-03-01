@@ -16,10 +16,15 @@ def hello_user():
     """
     while True:
         try:
-            user_say = input ('Как дела: ')
-            user_say == 'Хорошо'
-            print('Отлично')
+            user_say = input('Как дела: ')
+            word = 'Хорошо'
+            if user_say == word:
+                print('Я тоже думаю что хорошо')
+                break
+            else:
+                print(f'Как твои дела {user_say}')
         except KeyboardInterrupt:
+            print('\nПока')
             break
 
 if __name__ == "__main__":
