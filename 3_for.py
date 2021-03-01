@@ -22,7 +22,7 @@ def main():
                        {'school_class': '4a', 'score': [3, 4, 4, 5, 5]},
     ]
 
-    test = list()
+    test = []
     for klass_sum in school_students:
         klass = sum(klass_sum['score'])
         scores_avg1 = klass / len(klass_sum['score'])
