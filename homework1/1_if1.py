@@ -20,7 +20,7 @@ def main():
     В ней надо заменить pass на ваш код
     """
     age = int(input("Введите свой возраст: "))
-    print(int(age))
+    print(age)
     if age <= 0:
         print("Введите значение больше 0")
     elif 1 <= age <= 5:
